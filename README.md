@@ -250,9 +250,9 @@ Open VSCode for step-by-step analysis.
 * 📘 **Project Exposé:**
   `docs/expose.pdf` 👉 **[Exposé](docs/Exposé.pdf)**
 * 📕 **Full Technical Report (17+ pages):**
-  `docs/technical_report.pdf` 👉 **[Seminar Paper](docs/Predictive Maintenance Report (Smart Factories).pdf)**
+  `docs/technical_report.pdf` 👉 **[Seminar Paper](docs/Predictive_Maintenance_Report_(Smart_Factories).pdf)**
 * 📊 **Final Presentation Slides:**
-  `docs/presentation.pdf` 👉 **[Presentation](docs/Predictive Maintenance.pptx)**
+  `docs/presentation.pdf` 👉 **[Presentation](docs/Predictive_Maintenance.pptx)**
 
 👉 **[Browse Documentation](docs/)**
 
