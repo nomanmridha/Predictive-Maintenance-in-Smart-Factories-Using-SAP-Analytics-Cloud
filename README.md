@@ -23,8 +23,8 @@ This project transforms an academic **Smart Factories 4.0** assignment into a **
 * **Model Type:** Binary classification (failure / no failure)
 * **Performance (Expected Realistic):** F1-score ≈ 0.88–0.91
 * **Business Impact:** ~30% downtime reduction, ~$180K annual savings
-* **Predictive modeling using SAP Smart Predict
-* **Transparent discussion of technical limitations
+* **Predictive modeling using SAP Smart Predict**
+* **Transparent discussion of technical limitations**
 
 ---
 
@@ -66,6 +66,7 @@ Business Insights & Decisions
 3. **Feature Engineering** – Domain-driven metrics aligned with industrial behavior
 4. **SAP Analytics Cloud** – Analytic model + Smart Predict scenario
 5. **Validation** – Maintenance alert rules (>70% failure probability)
+   
 ![Pre-Processed Dataset Overview](./Visuals/dashboards/Dataset_Preview.jpg)
 
 ---
@@ -134,7 +135,7 @@ Business Insights & Decisions
 | Estimated Annual Savings      | ~$180,000                                    |
 
 🔍 **Full technical metrics, confusion matrix interpretation, influencer analysis, and business impact calculations are documented here:**  
-👉 **[Detailed Results & Business Impact](Results/README.md)**
+👉 **[Detailed Results & Business Impact](Results/Readme.md)**
 
 ---
 
@@ -143,13 +144,14 @@ Business Insights & Decisions
 Key dashboards, model outputs, and architecture visuals are stored in the `visuals/` directory.
 
 * 📊 **SAC Dashboards:**  `visuals/dashboards/`
+  
 ![SAP Analytics Cloud Dashboard](./Visuals/dashboards/Dashsboard.jpg)
 ![SAP Analytics Cloud Dashboard](./Visuals/dashboards/1.jpg)
 ![SAP Analytics Cloud Dashboard](./Visuals/dashboards/2.jpg)
 ![SAP Analytics Cloud Dashboard](./Visuals/dashboards/10.jpg)
 
 
-👉 Start here: **[Visual Project Artifacts](visuals/)**
+👉 Start here: **[Visual Project Artifacts](Visuals/dashboards)**
 
 ---
 
@@ -175,7 +177,7 @@ Key dashboards, model outputs, and architecture visuals are stored in the `visua
 * Performance metrics are interpreted with realism and professional caution.
 * Enterprise-grade solutions (e.g., SAP HANA, MLOps pipelines) are discussed as future-ready alternatives.
 
-👉 Full discussion available in **[Results/README.md](Results/README.md)**.
+👉 Full discussion available in **[Results/README.md](Results/Readme.md)**.
 
 ---
 
@@ -237,7 +239,8 @@ Open VSCode for step-by-step analysis.
 ### 📊 Results
 
 * 📌 **Model performance, limitations, and business impact:**
-  👉 **[Results/README.md](Results/README.md)**
+  👉 **[Results/README.md](Results/Readme.md)**
+  
   ![Model results](./Visuals/dashboards/7.jpg)
   ![Model results](./Visuals/dashboards/8.jpg)
   ![Model results](./Visuals/dashboards/9.jpg)
@@ -245,28 +248,29 @@ Open VSCode for step-by-step analysis.
 ### 📄 Documentation
 
 * 📘 **Project Exposé:**
-  `docs/expose.pdf`
-* 📕 **Full Technical Report (18+ pages):**
-  `docs/technical_report.pdf`
+  `docs/expose.pdf` 👉 **[Exposé](docs/Exposé.pdf)**
+* 📕 **Full Technical Report (17+ pages):**
+  `docs/technical_report.pdf` 👉 **[Seminar Paper](docs/Predictive Maintenance Report (Smart Factories).pdf)**
 * 📊 **Final Presentation Slides:**
-  `docs/presentation.pdf`
+  `docs/presentation.pdf` 👉 **[Presentation](docs/Predictive Maintenance.pptx)**
 
 👉 **[Browse Documentation](docs/)**
 
 ### 💻 Code & Notebooks
 
 * **Data preprocessing & inspection:**
-  `notebooks/01_data_preprocessing.ipynb`
+  `notebooks/01_data_preprocessing.ipynb` 👉 **[Data_Preprocessing](notebooks/01_data_preprocessing.py)**
 * **Feature engineering (Python validation):**
-  `notebooks/02_feature_engineering.ipynb`
+  `notebooks/02_feature_engineering.ipynb` 👉 **[Feature_Engineering](notebooks/02_feature_engineering.py)**
 * **Exploratory analysis & visualization:**
-  `notebooks/03_eda_visualization.ipynb`
+  `notebooks/03_eda_visualization.ipynb` 👉 **[Visualization](notebooks/03_eda_visualization.py)**
 
 Supporting scripts:
 
-* `src/data_cleaning.py`
-* `src/feature_engineering.py`
-* `src/utils.py`
+* `src/data_cleaning.py` 👉 **[Data_Cleaning](src/data_cleaning.py)**
+* `src/feature_engineering.py` 👉 **[Feature_Engineering](src/feature_engineering.py)**
+* `src/utils.py` 👉 **[utils](src/utils.py)**
+* `src/requirements.txt` 👉 **[Requirements](src/requirements.txt)**
 
 ---
 
