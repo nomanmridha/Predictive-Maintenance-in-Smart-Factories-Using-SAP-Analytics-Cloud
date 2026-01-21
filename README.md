@@ -8,7 +8,7 @@
 ![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
-**Tagline:** A data-driven approach to minimize downtime and optimize maintenance costs by up to **20–30%** using industrial IoT sensor data.
+**Predictive maintenance analytics for industrial IoT environments** — transforming sensor data into actionable maintenance insights to reduce unplanned downtime and optimize operational costs.
 
 ---
 
@@ -23,7 +23,8 @@ This project transforms an academic **Smart Factories 4.0** assignment into a **
 * **Model Type:** Binary classification (failure / no failure)
 * **Performance (Expected Realistic):** F1-score ≈ 0.88–0.91
 * **Business Impact:** ~30% downtime reduction, ~$180K annual savings
-* **Course:** Smart Factories 4.0 (SoSe25), FH Südwestfalen
+* **Predictive modeling using SAP Smart Predict
+* **Transparent discussion of technical limitations
 
 ---
 
@@ -37,19 +38,6 @@ Unplanned downtime costs manufacturers approximately **$260,000 per hour** (Delo
 * Inefficient maintenance scheduling
 * High operational and safety risks
 * Limited use of sensor-driven decision-making
-
----
-
-## 💡 The Solution
-
-A **predictive maintenance analytics pipeline** that uses machine sensor data to forecast failures before they occur.
-
-**Outcomes:**
-
-* Predict equipment failures proactively
-* Reduce unplanned downtime by ~30%
-* Save ~$180,000 annually for mid-sized factories
-* Improve maintenance planning and operational safety
 
 ---
 
@@ -78,6 +66,7 @@ Business Insights & Decisions
 3. **Feature Engineering** – Domain-driven metrics aligned with industrial behavior
 4. **SAP Analytics Cloud** – Analytic model + Smart Predict scenario
 5. **Validation** – Maintenance alert rules (>70% failure probability)
+![Pre-Processed Dataset Overview](./Visuals/dashboards/Dataset_Preview.jpg)
 
 ---
 
@@ -134,13 +123,33 @@ Business Insights & Decisions
 ![High-Risk Machines](https://img.shields.io/badge/High--Risk-12%25-E91E63?style=for-the-badge)
 ![F1 Score](https://img.shields.io/badge/F1--Score-88%25-2196F3?style=for-the-badge)
 
-📸 Embedded visuals in `/visuals/`:
+## 🎯 Key Results & Metrics (Summary)
 
-* SAC Dashboard screenshots
-* Confusion matrix
-* Feature importance (influencer analysis)
-* Risk segmentation charts
-* Cost-savings simulation views
+| Metric                        | Result                                       |
+| ----------------------------- | -------------------------------------------- |
+| Model Type                    | Binary Classification (Failure / No Failure) |
+| Expected Realistic F1-Score   | ~0.88 – 0.91                                 |
+| High-Risk Machines Identified | ~12%                                         |
+| Estimated Downtime Reduction  | ~30%                                         |
+| Estimated Annual Savings      | ~$180,000                                    |
+
+🔍 **Full technical metrics, confusion matrix interpretation, influencer analysis, and business impact calculations are documented here:**  
+👉 **[Detailed Results & Business Impact](Results/README.md)**
+
+---
+
+## 🖼️ Project Visuals (Linked)
+
+Key dashboards, model outputs, and architecture visuals are stored in the `visuals/` directory.
+
+* 📊 **SAC Dashboards:**  `visuals/dashboards/`
+![SAP Analytics Cloud Dashboard](./Visuals/dashboards/Dashsboard.jpg)
+![SAP Analytics Cloud Dashboard](./Visuals/dashboards/1.jpg)
+![SAP Analytics Cloud Dashboard](./Visuals/dashboards/2.jpg)
+![SAP Analytics Cloud Dashboard](./Visuals/dashboards/10.jpg)
+
+
+👉 Start here: **[Visual Project Artifacts](visuals/)**
 
 ---
 
@@ -157,6 +166,16 @@ Business Insights & Decisions
 ### Challenge 3: Academic Tool Constraints
 
 **Solution:** Maximized available functionality, documented enterprise-grade alternatives (e.g., SAP HANA, MLOps pipelines).
+
+---
+
+## ⚠️ Technical Notes & Transparency
+
+* **Data leakage** was identified in the SAP academic environment and is explicitly documented.
+* Performance metrics are interpreted with realism and professional caution.
+* Enterprise-grade solutions (e.g., SAP HANA, MLOps pipelines) are discussed as future-ready alternatives.
+
+👉 Full discussion available in **[Results/README.md](Results/README.md)**.
 
 ---
 
@@ -181,44 +200,24 @@ Business Insights & Decisions
 
 ---
 
-## 📁 Repository Structure
+## 🗂️ Project Structure
 
 ```
-predictive-maintenance-smart-factory/
+Predictive-Maintenance-in-Smart-Factories-Using-SAP-Analytics-Cloud/
 │
 ├── data/
-│   ├── raw/                    # Original Kaggle dataset
+│   ├── raw/                    # Original dataset
 │   ├── processed/              # Cleaned datasets
-│   └── documentation/          # Data dictionary
+│   └── documentation/          # Data dictionary & schema
 │
-├── notebooks/
-│   ├── 01_data_preprocessing.ipynb
-│   ├── 02_feature_engineering.ipynb
-│   └── 03_eda_visualization.ipynb
+├── notebooks/                  # Jupyter analysis notebooks
+├── src/                        # Python helper scripts
+├── docs/                       # Reports, slides, SAC workflow
+├── visuals/                    # Dashboards, charts, diagrams
+├── Results/                    # Model performance & business impact
+│   └── README.md
 │
-├── src/
-│   ├── data_cleaning.py
-│   ├── feature_engineering.py
-│   └── utils.py
-│
-├── docs/
-│   ├── expose.pdf
-│   ├── technical_report.pdf
-│   ├── presentation.pdf
-│   └── sac_workflow.md
-│
-├── visuals/
-│   ├── dashboards/
-│   ├── charts/
-│   └── architecture/
-│
-├── results/
-│   ├── model_performance.md
-│   └── business_impact.md
-│
-└── README.md
-└── .gitignore
-└── License
+└── README.md                   # Master project overview (this file)
 ```
 
 ---
@@ -232,6 +231,42 @@ pip install -r requirements.txt
 ```
 
 Open VSCode for step-by-step analysis.
+
+---
+
+### 📊 Results
+
+* 📌 **Model performance, limitations, and business impact:**
+  👉 **[Results/README.md](Results/README.md)**
+  ![Model results](./Visuals/dashboards/7.jpg)
+  ![Model results](./Visuals/dashboards/8.jpg)
+  ![Model results](./Visuals/dashboards/9.jpg)
+
+### 📄 Documentation
+
+* 📘 **Project Exposé:**
+  `docs/expose.pdf`
+* 📕 **Full Technical Report (18+ pages):**
+  `docs/technical_report.pdf`
+* 📊 **Final Presentation Slides:**
+  `docs/presentation.pdf`
+
+👉 **[Browse Documentation](docs/)**
+
+### 💻 Code & Notebooks
+
+* **Data preprocessing & inspection:**
+  `notebooks/01_data_preprocessing.ipynb`
+* **Feature engineering (Python validation):**
+  `notebooks/02_feature_engineering.ipynb`
+* **Exploratory analysis & visualization:**
+  `notebooks/03_eda_visualization.ipynb`
+
+Supporting scripts:
+
+* `src/data_cleaning.py`
+* `src/feature_engineering.py`
+* `src/utils.py`
 
 ---
 
